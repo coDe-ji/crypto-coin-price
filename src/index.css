@@ -1,13 +1,170 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.2px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Styling for the widget container */
+#widgetContainer{
+  background-color: #060659c8;
+  height: 600px;
+  width: 300px;
+  margin-left: 500px;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* Styling for the Dropdown Component */
+
+#dropdownContainer{
+  margin-top: 2px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+#selectCrytoCoinBox{
+  border: 2px solid #9191ec;
+  border-radius: 30px;
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.coinNameContainer{
+  border: 0px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  text-align: center;
+  color: white;
+}
+
+
+#dropdownButton{
+  height: 20px;
+  width:20px;
+  cursor: pointer;
+}
+
+.coinOption{
+  cursor: pointer;
+  color: #9191ec;
+  
+}
+
+#dropdownList{
+ border: none;
+ background-color: #212149;
+ width: 220px;
+ margin-left: 40px;
+ margin-top: -140px;
+ position: absolute;
+  z-index: 1;
+}
+
+
+/* Styling for the Coin card container */
+
+#coininfoContainer{
+  position: relative;
+  z-index: 0;
+}
+
+#refreshButton{
+  text-align: right;
+  margin: 10px;
+  height:25px;
+  width: 25px;
+  padding-left: 220px;
+  cursor: pointer;
+  fill: #fff;
+  
+}
+
+#cryptoCoinCard{
+  border: none;
+  background: #f2709c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 20px;
+  width: 90%;
+  height: 150px;
+  margin-left: 15px;
+  border-radius: 12px;
+}
+
+#coinName{
+  text-align: left;
+  margin-left: -15px;
+  color: #9191ec;
+  font-size: 15px;
+}
+
+#coinPrice{
+  font-size: 35px;
+  font-weight: bolder;
+  color: white;
+  width: 220px;
+  margin-top: 4px;
+  margin-left: 20px;
+  letter-spacing: 1.2px;
+}
+
+.background{
+  background-color: transparent;
+}
+
+#toggleCurrency{
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #9191ec;
+  border-radius: 30px;
+  height: 52px;
+  width: 91%;
+}
+
+.toggleCoin{
+  width: 136px;
+  height: 48px;
+  border: none;
+  margin: 2px;
+  cursor: pointer; 
+}
+
+.toggleUSD{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left:-2px ;
+  margin-right:3px;
+  color: #9191ec;
+  background-color: transparent;
+}
+
+.toggleGBP{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-right:-2px ;
+  margin-left:3px;
+  color: #9191ec;
+  background-color: transparent;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  
+}
+
+#coinNameDisplay{
+  font-size: 15px;
+  font-weight: 500;
+}
+
